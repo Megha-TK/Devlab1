@@ -1,1 +1,6 @@
-hiii
+FROM python
+WORKDIR /app
+COPY . /app
+RUN python sample.py
+CMD ["python", "sample.py"]
+
